@@ -2,3 +2,9 @@
   background-color: #3ba443;
   border-radius:10px;
 }
+#White{
+  color:rgb(247, 244, 244);
+}
+#White:hover{
+  color:rgb(255, 255, 255);
+}
