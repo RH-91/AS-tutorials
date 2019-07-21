@@ -33,7 +33,24 @@
  text-decoration: none;
 }
 .banner-img{
-border-top-left-radius: 10px;
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
+border-radius: 10px
+}
+body{
+  font-family: 'Nunito', sans-serif;
+}
+@media screen and (max-width:767px){
+  .banner-img{border-top-left-radius: 0;
+  border-top-right-radius: 0;}
+  #b-btn{font-size: 16px !important;}
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+ #b-btn{font-size: 16px !important;}
+  .banner{font-size:25px;}
+ .align{ -ms-flex-line-pack: center !important;
+  align-content: center !important;}
+  .banner-img{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
 }
