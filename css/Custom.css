@@ -71,6 +71,24 @@ body {
     font-size: 30px !important;
   }
 }
-.t-1{
-  height:150px !important;
+
+.bg-1{
+  background-color: #3ba443 !important;
+}
+@media screen and (max-width:768px){
+  .tu-body{
+    font-size:12px;
+  }
+  .tu-titles{
+    font-size:17px;
+  }
+  
+}
+#question-1{
+border-top-left-radius:15px; 
+border-top-right-radius:15px; 
+}
+#last-question{
+  border-bottom-left-radius:15px; 
+  border-bottom-right-radius:15px; 
 }

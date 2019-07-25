@@ -2,7 +2,7 @@
 
 <head>
   <title>
-    AN Tutorials
+    AS Tutorials
   </title>
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 
 <body>
   <div class="container-fluid">
-    <!-- Navbar -->
+    <!-- Navbar Start-->
     <nav class="navbar navbar-expand-md mt-2 navbar-dark" id="nav">
       <a href="#" class="navbar-brand text-white">AS-Tutorials</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#Content"><span
@@ -26,10 +26,10 @@
         </div>
       </div>
     </nav>
-    <!-- Navbar -->
+    <!-- Navbar Ends-->
+    <!-- Banner Start-->
     <img src="https://blog.designveloper.com/wp-content/uploads/2018/12/b8-0-1.jpg"
       class="img-fluid d-md-none d-inline banner-img-2 mt-3">
-    <!-- Banner -->
     <div class="banner text-white mt-2">
       <div class="row" style="height:inherit;">
         <div class="col-md-6 h-100">
@@ -57,22 +57,91 @@
         </div>
       </div>
     </div>
-    <!-- Banner --><br><br>
+    <!-- Banner Ends--><br><br>
     <h1 class="display-5 text-center m-lg-5 Title-1">Latest Tutorials</h1>
-    <div class="row t-1">
-      <div class="col-md-2 h-100 text-center">
-        <img src="https://www.aktion.com/wp-content/uploads/2015/07/javalogo.jpg" class="img-fluid "
-          style="height:inherit">
+    <div class="row t-1 mx-1">
+
+      <div class="col-md-4 text-center align-items-center d-flex" style="height:inherit">
+        <img src="Image.png" class="img-fluid">
       </div>
-      <div class="col-md-10">
-        <h4>Java</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum praesentium ea asperiores esse optio quam
-          accusamus incidunt nostrum quaerat totam. Ratione ut minima, odit fuga praesentium ipsa iste rem debitis
-          deleniti veritatis odio culpa minus quae quam et assumenda nihil delectus natus! Enim labore facere doloremque
-          architecto officia accusamus odit?</p>
+
+      <div class="col-md-8 bg-1 rounded text-white position-relative">
+        <div class="vertical-center">
+          <h4 class="text-center mt-3 tu-titles">Text</h4>
+          <p class="text-justify p-body">
+            <a href="#" class="text-white text-decoration-none">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum praesentium ea asperiores esse optio
+              quam
+              accusamus incidunt nostrum quaerat totam. Ratione ut minima, odit fuga praesentium ipsa iste rem debitis
+              deleniti veritatis odio culpa minus quae quam et assumenda nihil delectus natus! Enim labore facere
+              doloremque
+              architecto officia accusamus odit?</a>
+          </p>
+        </div>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="row t-1 mx-1 mt-2">
+
+      <div class="col-md-8 order-md-0 order-1 bg-1 rounded text-white position-relative">
+        <div class="vertical-center">
+          <h4 class="text-center mt-3 tu-titles">Text</h4>
+          <p class="text-justify p-body">
+            <a href="#" class="text-white text-decoration-none">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum praesentium ea asperiores esse optio
+              quam
+              accusamus incidunt nostrum quaerat totam. Ratione ut minima, odit fuga praesentium ipsa iste rem debitis
+              deleniti veritatis odio culpa minus quae quam et assumenda nihil delectus natus! Enim labore facere
+              doloremque
+              architecto officia accusamus odit?</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 order-md-1 order-0 text-center align-items-center d-flex" style="height:inherit">
+        <img src="Image.png" class="img-fluid tutorial-img">
+      </div>
+
+    </div>
+
+    <h4 class="text-center rounded-lg mt-2 text-white p-2" style="background: rgb(241, 124, 29);">FAQ</h4>
+    <!-- FAQ Start -->
+    <div class="accordion" id="FAQ">
+      <div class="card bg-1 text-white" id="question-1">
+        <div class="card-header">
+          <h4>
+            <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-1">
+              <!--Que.-Start--> 1. Question?
+              <!--Que.-End--></button>
+          </h4>
+        </div>
+        <div class="collapse show" id="Q-1" data-parent="#FAQ">
+          <div class="card-body">
+            <p class="d-inline">Answer .........</p>
+            <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-1">&#10006;</button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-1 text-white  " id="last-question">
+        <div class="card-header">
+          <h4>
+            <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-2">
+              <!--Que.-Start-->2. Question?
+              <!--Que.-End--></button>
+          </h4>
+        </div>
+        <div class="collapse" id="Q-2" data-parent="#FAQ">
+          <div class="card-body">
+            <p class="d-inline">Answer .........</p>
+            <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-2">&#10006;</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <!-- FAQ Ends -->
+    
   </div>
   <!-- JS Files -->
   <script src="js/jquery.js"></script>
