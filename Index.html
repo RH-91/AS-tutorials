@@ -12,6 +12,8 @@
 </head>
 
 <body>
+  <button onclick="scrolltoTop()" id="scroll-btn" title="Rush to Top!" class="rounded-circle btn"><i
+      class="fa fa-angle-up"></i></button>
   <div class="container-fluid">
     <!-- Navbar Start-->
     <nav class="navbar navbar-expand-md mt-2 navbar-dark" id="nav">
@@ -105,69 +107,87 @@
 
     </div>
 
-    <h4 class="text-center rounded-lg mt-2 text-white p-2" style="background-image: linear-gradient(to right, #ff4e00, #ff5e00, #ff6c00, #ff7900, #ff8500);">FAQ</h4>
+    <h4 class="text-center rounded-lg mt-2 text-white p-2"
+      style="background-image: linear-gradient(to right, #ff4e00, #ff5e00, #ff6c00, #ff7900, #ff8500);">FAQ</h4>
     <!-- FAQ Start -->
     <div class="accordion py-5" id="FAQ" ">
-      <div class="card bg-1 text-white" id="question-1">
-        <div class="card-header">
-          <h4>
-            <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-1">
-              <!--Que.-Start--> 1. Question?
-              <!--Que.-End--></button>
-          </h4>
-        </div>
-        <div class="collapse show" id="Q-1" data-parent="#FAQ">
-          <div class="card-body">
-            <p class="d-inline">Answer .........</p>
-            <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-1">&#10006;</button>
-          </div>
-        </div>
+      <div class=" card bg-1 text-white" id="question-1">
+      <div class="card-header">
+        <h4>
+          <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-1">
+            <!--Que.-Start--> 1. Question?
+            <!--Que.-End--></button>
+        </h4>
       </div>
-      <div class="card bg-1 text-white  " id="last-question">
-        <div class="card-header">
-          <h4>
-            <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-2">
-              <!--Que.-Start-->2. Question?
-              <!--Que.-End--></button>
-          </h4>
-        </div>
-        <div class="collapse" id="Q-2" data-parent="#FAQ">
-          <div class="card-body">
-            <p class="d-inline">Answer .........</p>
-            <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-2">&#10006;</button>
-
-          </div>
+      <div class="collapse show" id="Q-1" data-parent="#FAQ">
+        <div class="card-body">
+          <p class="d-inline">Answer .........</p>
+          <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-1">&#10006;</button>
         </div>
       </div>
     </div>
-    <!-- FAQ Ends -->
-    <!-- Footer Start -->
-    <footer id="footer" class="rounded text-white">
-        <ul class="text-center" style="font-size: 20px;">
-          <li class="d-inline p-3">Follow Us On:</li>
-          <li class="d-inline pr-3"><a href="#" class="text-white"><i class="fa fa-tumblr"></i></a></i></li>
-          <li class="d-inline pr-3"><a href="#" class="text-white"><i class="fa fa-telegram"></i></a></i></li>
-          <li class="d-inline pr-3"><a href="#" class="text-white"><i class="fa fa-youtube"></i></a></i></li>
-        </ul>
-      <hr class="bg-white">
-      <div class="bottom-footer">
-          <ul class="text-center">
-            <li><a href="#" class="text-white text-decoration-none">Terms</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Policy</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Disclaimer</a></li>
-          </ul>
-          <div class="text-center">
-            <p style="font-size: 15px;">©AS-Tutorials 2019</p>
-          </div>
+    <div class="card bg-1 text-white mb-1" id="last-question">
+      <div class="card-header">
+        <h4>
+          <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-2">
+            <!--Que.-Start--> 2. Question?
+            <!--Que.-End--></button>
+        </h4>
+      </div>
+      <div class="collapse" id="Q-2" data-parent="#FAQ">
+        <div class="card-body">
+          <p class="d-inline">Answer .........</p>
+          <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-2">&#10006;</button>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    </div>
+  <!-- FAQ Ends -->
+  <!-- Footer Start -->
+  <footer id="footer" class="rounded text-white">
+    <ul class="text-center" style="font-size: 20px;">
+      <li class="d-inline p-3">Follow Us On:</li>
+      <li class="d-inline pr-3"><a href="#" class="text-white"><i class="fa fa-tumblr"></i></a></i></li>
+      <li class="d-inline pr-3"><a href="#" class="text-white"><i class="fa fa-telegram"></i></a></i></li>
+      <li class="d-inline pr-3"><a href="#" class="text-white"><i class="fa fa-youtube"></i></a></i></li>
+    </ul>
+    <hr class="bg-white">
+    <div class="bottom-footer">
+      <ul class="text-center">
+        <li><a href="#" class="text-white text-decoration-none">Terms</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Policy</a></li>
+        <li><a href="#" class="text-white text-decoration-none">Disclaimer</a></li>
+      </ul>
+      <div class="text-center">
+        <p style="font-size: 15px;">©AS-Tutorials 2019</p>
+      </div>
       <div>
       </div>
-    </footer>
-    <!-- Footer End -->
+  </footer>
+  <!-- Footer End -->
   </div>
   <!-- JS Files -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll-btn").style.display = "block";
+      } else {
+        document.getElementById("scroll-btn").style.display = "none";
+      }
+    }
+    function scrolltoTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </body>
 
 </html>

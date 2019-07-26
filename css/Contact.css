@@ -1,5 +1,5 @@
 .heading{
-background: #FF8500;
+background-image: linear-gradient(to bottom, #ff8c00, #ff8000, #ff7400, #ff6700, #ff5900);
 border-radius: 30px;
 padding-top: 2px ;
 }
