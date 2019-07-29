@@ -14,9 +14,9 @@
 <body>
   <button onclick="scrolltoTop()" id="scroll-btn" title="Rush to Top!" class="rounded-circle btn"><i
       class="fa fa-angle-up"></i></button>
-  <div class="container-fluid">
+  <div class="content">
     <!-- Navbar Start-->
-    <nav class="navbar navbar-expand-md mt-2 navbar-dark" id="nav">
+    <nav class="navbar navbar-expand-md mt-0 navbar-dark rounded-0" id="nav">
       <a href="#" class="navbar-brand text-white">AS-Tutorials</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#Content"><span
           class="navbar-toggler-icon"></span></button>
@@ -31,8 +31,6 @@
     </nav>
     <!-- Navbar Ends-->
     <!-- Banner Start-->
-    <img src="https://blog.designveloper.com/wp-content/uploads/2018/12/b8-0-1.jpg"
-      class="img-fluid d-md-none d-inline banner-img-2 mt-3">
     <div class="banner text-white mt-2">
       <div class="row" style="height:inherit;">
         <div class="col-md-6 h-100">
@@ -50,17 +48,10 @@
           </div>
           <!-- Btn -->
         </div>
-        <div class="col-md-6 h-100">
-          <div class="row align h-100">
-            <div class="col-12">
-              <div class="p-md-2"><img src="https://blog.designveloper.com/wp-content/uploads/2018/12/b8-0-1.jpg"
-                  class="img-fluid banner-img d-none d-md-inline"></div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <!-- Banner Ends--><br><br>
+    <!-- Latest Tutorials Start -->
     <h1 class="display-5 text-center m-lg-5 Title-1">Latest Tutorials</h1>
     <div class="row t-1 mx-1">
 
@@ -106,41 +97,48 @@
       </div>
 
     </div>
-
+    <!-- Latest Tutorials End -->
     <h4 class="text-center rounded-lg mt-2 text-white p-2"
       style="background-image: linear-gradient(to right, #ff4e00, #ff5e00, #ff6c00, #ff7900, #ff8500);">FAQ</h4>
     <!-- FAQ Start -->
-    <div class="accordion py-5" id="FAQ" ">
-      <div class=" card bg-1 text-white" id="question-1">
+    <div class="accordion pb-5 pt-2" id="FAQ" ">
+
+      <a class="text-white text-decoration-none d-block" data-toggle="collapse" href="#Q-1">
+      <div class=" card bg-1 text-white rounded-0" id="question-1">
       <div class="card-header">
-        <h4>
-          <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-1">
+        <p class="faq-text">
+          
             <!--Que.-Start--> 1. Question?
-            <!--Que.-End--></button>
-        </h4>
+            <!--Que.-End-->
+        </p>
       </div>
-      <div class="collapse show" id="Q-1" data-parent="#FAQ">
+      <div class="collapse " id="Q-1" data-parent="#FAQ">
         <div class="card-body">
-          <p class="d-inline">Answer .........</p>
-          <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-1">&#10006;</button>
+          <div>
+            <p class="d-inline">Answer .........</p>
+            <button class="btn text-white mb-1 faq-close position-absolute " data-toggle="collapse" data-target="#Q-1">&#10006;</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card bg-1 text-white mb-1" id="last-question">
+    </a>
+      <a class="text-white text-decoration-none d-block" data-toggle="collapse" href="#Q-2">
+      <div class=" card bg-1 text-white rounded-0" id="question-2">
       <div class="card-header">
-        <h4>
-          <button class="btn btn-link text-white text-decoration-none" data-toggle="collapse" data-target="#Q-2">
+        <p class="faq-text">
+          
             <!--Que.-Start--> 2. Question?
-            <!--Que.-End--></button>
-        </h4>
+            <!--Que.-End-->
+        </p>
       </div>
       <div class="collapse" id="Q-2" data-parent="#FAQ">
         <div class="card-body">
           <p class="d-inline">Answer .........</p>
-          <button class="btn text-white mb-1 float-right" data-toggle="collapse" data-target="#Q-2">&#10006;</button>
+          <button class="btn text-white mb-1 faq-close" data-toggle="collapse" data-target="#Q-2">&#10006;</button>
         </div>
       </div>
     </div>
+    </a>
     <br><br><br>
     </div>
   <!-- FAQ Ends -->
